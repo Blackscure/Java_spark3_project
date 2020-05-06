@@ -7,4 +7,11 @@ public class AnimalTest {
         Animal  testAnimal = new Animal( "Tiger");
         assertEquals(true, testAnimal instanceof Animal);
    }
+
+
+    @Test
+    public void getsAnimalName() {
+        Animal  testAnimal = new Animal("Tiger", "endangered");
+        assertEquals("Tiger",  testAnimal.getName());
+    }
 }
