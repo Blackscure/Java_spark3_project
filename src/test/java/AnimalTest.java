@@ -19,4 +19,12 @@ public class AnimalTest {
    public void getsAnimalType() {
        assertEquals("Endagered",  Animal.getType());
    }
+
+    @Test
+    public void save_assignsIdToObject() {
+       Animal testAnimal = new Animal("Tiger");
+        testAnimal.save();
+       Animal savedAnimal = Animal.all().get(0);
+        assertEquals(testAnimal.getId(), savedAnimal.getId());
+    }
 }
