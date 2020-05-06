@@ -10,8 +10,13 @@ public class AnimalTest {
 
 
     @Test
-    public void getsAnimalName() {
+    public void getAnimalName() {
         Animal  testAnimal = new Animal("Tiger", "endangered");
         assertEquals("Tiger",  testAnimal.getName());
     }
+
+    @Test
+   public void getsAnimalType() {
+       assertEquals("Endagered",  Animal.getType());
+   }
 }
