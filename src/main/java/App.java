@@ -84,8 +84,5 @@ public class App {
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
 
-//////////////////////////////////////////////////////////////
-
-
     }
 }
