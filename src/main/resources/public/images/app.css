@@ -6,16 +6,17 @@ ul {
   background-color: #333;
 }
 .active {
-background-color: green;
+background-color: orange;
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
   display: block;
   color: white;
+  text-shadow: 2px 4px  black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -27,9 +28,8 @@ li a:hover {
   color:white;
 }
 body {
-background-image: url("/images/vb.jpg");
+background-image: url("/images/10312.jpeg");
     background-size: cover;
-
     color: white;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
